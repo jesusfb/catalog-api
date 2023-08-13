@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const { MONGO_URI } = process.env;
 
 exports.connect = () => {
-    mongoose.connect(MONGO_URI, {
+    mongoose.connect("mongodb+srv://jesusfb:Dove3229-@cluster0.yx9sjqo.mongodb.net/catalog", {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useCreateIndex: true,
